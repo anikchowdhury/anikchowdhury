@@ -1,4 +1,0 @@
-class AddAndRenameUsers < ActiveRecord::Migration
-  def change
-  end
-end
