@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20130704201831) do
     t.integer  "salary"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "users", force: true do |t|
@@ -30,7 +31,6 @@ ActiveRecord::Schema.define(version: 20130704201831) do
     t.string   "last_name"
     t.string   "user_name"
     t.string   "password"
-    t.integer  "post_id"
   end
 
 end

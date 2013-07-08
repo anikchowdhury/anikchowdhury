@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  belongs_to :post
+  has_many :posts, dependent: :destroy
   validates :first_name,presence:true
   before_create do |user|
     user.user_name=(user.first_name.to_s.gsub(/\s/,'')+user.last_name.to_s.gsub(/\s/,'')).downcase if user.user_name.blank?
